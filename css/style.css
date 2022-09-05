@@ -48,7 +48,7 @@ h1 {
     display: block;
 }
 .pendingItem{
-    background-color: grey;
+    background-color: rgb(225,232,246);
     margin-top: 5px;
 }
 
@@ -58,7 +58,7 @@ h1 {
     display: block;
 }
 .completedItem{
-    background-color: gray;
+    background-color: white;
     margin-top: 5px;;
 }
 .showHideCompleteBtn{
