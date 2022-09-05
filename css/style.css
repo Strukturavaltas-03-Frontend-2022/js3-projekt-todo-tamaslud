@@ -27,4 +27,47 @@ h1 {
 .container{
     background-color: rgb(244,247,253);
     color: black;
+    width: 500px;
 }
+.datebox{
+    font-size: 1.5em;
+    color:rgb(244,91,104);
+    padding: 10px;
+}
+.addTaskBox{
+    padding:10px;
+}
+.allCompletedBox{
+    background-color: aqua;
+    padding: 10px;
+    display: none;
+}
+.pendingTaskBox{
+    padding: 10px;
+    border: 1px dotted darkolivegreen;
+    display: block;
+}
+.pendingItem{
+    background-color: grey;
+    margin-top: 5px;
+}
+
+.completedTaskBox{
+    padding: 10px;
+    border: 1px dotted darkolivegreen;
+    display: block;
+}
+.completedItem{
+    background-color: gray;
+    margin-top: 5px;;
+}
+.showHideCompleteBtn{
+    height: 2em;
+    width: 10em;
+}
+.clearAllBtn{
+    height: 2em;
+    width: 10em;
+}
+
+
