@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+::selection {
+    display: none;
+}
+.inactive {
+    pointer-events: none;
+}
+body {
+    background-color:rgb(244,91,104);
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: white;
+  width: 60vw;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: rgba(47,198,240, 90) 0 0 5vw;
+  padding: 10px;
+}
+.container{
+    background-color: rgb(244,247,253);
+    color: black;
+}
