@@ -20,7 +20,7 @@ let todoArr = [
   },
   {
     id: 2,
-    item: 'shocking arrays',
+    item: 'shock array',
     completed: false,
   },
   {
@@ -50,6 +50,7 @@ const countItems = (array = [todoArr]) => {
   });
   completedPercent = Math.round((completedItems / (completedItems + pendingItems)) * 100);
 };
+
 const screenUpdate = () => {
   screenDateUpdate();
   countItems(todoArr);
