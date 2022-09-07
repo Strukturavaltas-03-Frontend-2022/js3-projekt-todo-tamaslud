@@ -51,7 +51,7 @@ h1 {
     background-color: rgb(225,232,246);
     margin-top: 5px;
     height: 2em;
-    padding: .5em;
+    padding: .4em;
 }
 
 
@@ -64,7 +64,7 @@ h1 {
     background-color: white;
     margin-top: 5px;
     height: 2em;
-    padding: .5em;
+    padding: .4em;
 }
 .showHideCompleteBtn{
     height: 2em;
@@ -91,5 +91,8 @@ h1 {
 }
 .delItem {
     float: right;
+}
+.completedItem:hover, .pendingItem:hover{
+    box-shadow: 0 0 0 1px black ;
 }
 
