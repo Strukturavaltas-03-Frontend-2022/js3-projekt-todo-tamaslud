@@ -36,6 +36,17 @@ h1 {
 }
 .addTaskBox{
     padding:10px;
+    height: 3em;
+}
+.newTaskInput{
+    width: 94%;
+    color: black;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+.addNewTask{
+    line-height: 1.5em;
+    font-weight: bold;
 }
 .allCompletedBox{
     background-color: aqua;
