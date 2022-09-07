@@ -51,11 +51,41 @@ const countItems = (array = [todoArr]) => {
   completedPercent = Math.round((completedItems / (completedItems + pendingItems)) * 100);
 };
 
+const buildPendingBox = () => {
+  const pendingItembox = document.querySelector('.pendingItemBox');
+  for (let i = 0; i < todoArr.length; i += 1) {
+    const elem = todoArr[i];
+    if (elem.completed === false) {
+      const actualItem = `<div class="pendingItem">
+      <span class="checkbox"><input type="checkbox" /></span>
+      <span class="Item">${elem.item}</span>
+      <span class="delItem"><img class="delete" src="./css/icons/trash.svg" alt="delete"></span></div>`;
+      pendingItembox.insertAdjacentHTML('beforeend', actualItem);
+    }
+  }
+};
+
+const buildCompletedBox = () => {
+  const pendingItembox = document.querySelector('.completedItemBox');
+  for (let i = 0; i < todoArr.length; i += 1) {
+    const elem = todoArr[i];
+    if (elem.completed) {
+      const actualItem = `<div class="completedItem">
+      <span class="checkbox"><input type="checkbox" checked/></span>
+      <span class="Item">${elem.item}</span>
+      <span class="delItem"><img class="delete" src="./css/icons/trash.svg" alt="delete"></span></div>`;
+      pendingItembox.insertAdjacentHTML('beforeend', actualItem);
+    }
+  }
+};
+
 const screenUpdate = () => {
   screenDateUpdate();
   countItems(todoArr);
   pendingHeader.innerHTML = `You have ${pendingItems} pending items`;
+  buildPendingBox();
   completedHeader.innerHTML = `Completed tasks : ${completedPercent}%`;
+  buildCompletedBox();
 };
 
 screenUpdate();
