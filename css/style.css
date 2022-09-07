@@ -50,7 +50,10 @@ h1 {
 .pendingItem{
     background-color: rgb(225,232,246);
     margin-top: 5px;
+    height: 2em;
+    padding: .5em;
 }
+
 
 .completedTaskBox{
     padding: 10px;
@@ -59,7 +62,9 @@ h1 {
 }
 .completedItem{
     background-color: white;
-    margin-top: 5px;;
+    margin-top: 5px;
+    height: 2em;
+    padding: .5em;
 }
 .showHideCompleteBtn{
     height: 2em;
@@ -69,5 +74,22 @@ h1 {
     height: 2em;
     width: 10em;
 }
+.delete{
+    height: 1em;
+    opacity: 0;
+    transition: opacity 0.5s;
+    transition-timing-function: ease-in;
+}
+.pendingItem:hover .delete{
+    height: 1em;
+    opacity: 1;
+}
 
+.completedItem:hover .delete{
+    height: 1em;
+    opacity: 1;
+}
+.delItem {
+    float: right;
+}
 
